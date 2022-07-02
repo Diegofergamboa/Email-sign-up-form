@@ -1,12 +1,13 @@
 import React from 'react';
+import './form.scss';
 
 function Form() {
     return(
         <form>
-            <label>
+            <label for='inputId'>
                 EMAIL ADDRESS
-                <input></input>
-            </label>
+                <input type='text' id='inputId' name='inputId'></input>
+            </label>v
             <button onSubmit={() => alert('Se ha submitido')}>
                 <span>Flechita</span>
             </button>

@@ -1,7 +1,45 @@
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;300;900&display=swap");
+h1 {
+  margin: 0;
+}
+
+h1 {
+  color: #4c2982;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
   font-weight: 900;
-  font-display: swap;
-  src: url("Inter-Black.woff2?v=3.11") format("woff2"), url("Inter-Black.woff?v=3.11") format("woff");
+  line-height: 1.5;
+}
+
+h2 {
+  color: #4c2982;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+h2.h2--green {
+  color: #067973;
+}
+h2.h2--red {
+  color: #b71540;
+}
+h2.h2--purple {
+  color: #4c2982;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+p.p--green {
+  color: #067973;
+  font-size: 20px;
+}
+p.p--red {
+  color: #b71540;
+  font-size: 20px;
 }/*# sourceMappingURL=typography.css.map */
