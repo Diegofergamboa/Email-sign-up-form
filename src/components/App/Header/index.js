@@ -3,7 +3,7 @@ import './header.scss';
 
 function Header() {
     return(
-        <h1>Hello world</h1>
+        <h1>Sign up for the latest updates</h1>
     );
 };
 
