@@ -26,6 +26,7 @@ h2.h2--red {
 }
 h2.h2--purple {
   color: #4c2982;
+  text-transform: uppercase;
 }
 
 p {

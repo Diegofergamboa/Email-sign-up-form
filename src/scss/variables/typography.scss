@@ -20,7 +20,6 @@ h1 {
 }
 
 h2 {
-
     color: $color-primary;
     font-family: $font-primary;
     font-size: $font-size-small;
@@ -29,13 +28,13 @@ h2 {
 
     &.h2--green { 
         color: $color-success;
-        
     }
     &.h2--red {
         color: $color-error;
     }
     &.h2--purple {
         color: $color-primary;
+        text-transform: uppercase;
     }
 }
 
