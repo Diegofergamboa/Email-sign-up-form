@@ -1,0 +1,23 @@
+@import '../../../scss/globals.scss';
+
+button {   
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+    border: none;
+    box-shadow: 2px 2px 2px #837c7c;
+}
+button {
+    background-image: url('../../../assets/svg-icons/arrow-right.svg');
+    background-color: $color-secondary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input {
+    height: 40px;
+    width: 260px;
+    border: 1px solid $color-primary;
+    box-shadow: 2px 2px 2px #837c7c;
+}
