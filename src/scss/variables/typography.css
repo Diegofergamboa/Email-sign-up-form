@@ -24,10 +24,6 @@ h2.h2--green {
 h2.h2--red {
   color: #b71540;
 }
-h2.h2--purple {
-  color: #4c2982;
-  text-transform: uppercase;
-}
 
 p {
   font-family: "Inter", sans-serif;
@@ -43,4 +39,9 @@ p.p--green {
 p.p--red {
   color: #b71540;
   font-size: 20px;
+}
+
+.label-title {
+  color: #4c2982;
+  text-transform: uppercase;
 }/*# sourceMappingURL=typography.css.map */

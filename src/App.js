@@ -6,7 +6,7 @@ import './scss/globals.scss';
 function App() {
   return (
     <React.Fragment>
-    <main className="mainClass">
+    <main className="main-class">
       <Header/>
       <Form/>
     </main>

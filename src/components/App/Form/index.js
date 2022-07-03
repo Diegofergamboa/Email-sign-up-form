@@ -4,7 +4,7 @@ import './form.scss';
 function Form() {
     return(
         <form>
-            <label for='inputId' className="h2--purple">
+            <label for='inputId' className="label-title">
                 Email Adress
                 <input type='text' id='inputId' name='inputId'></input>
             </label>

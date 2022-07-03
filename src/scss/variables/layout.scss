@@ -12,8 +12,8 @@ $color-error-bg: #fdeff3;
 
 
 
-//! Setting example of the variable on sass
-
-// .alert {
-//     background-color: map.get($theme-colors, "warning");
-// }
+.main-class {
+    width: 250;
+    display: grid;
+    grid-template-rows: repeat(2, auto) ;   
+}
