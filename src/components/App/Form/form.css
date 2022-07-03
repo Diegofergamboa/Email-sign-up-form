@@ -1,28 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;300;900&display=swap");
-.grid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.subgrid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.grid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.subgrid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
 h1 {
   margin: 0;
 }
@@ -30,7 +6,7 @@ h1 {
 h1 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.5;
 }
@@ -38,7 +14,7 @@ h1 {
 h2 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -51,23 +27,29 @@ h2.h2--red {
 
 p {
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
 }
 p.p--green {
   color: #067973;
-  font-size: 20px;
+  font-size: 16px;
 }
 p.p--red {
   color: #b71540;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.label-title {
-  color: #4c2982;
-  text-transform: uppercase;
+* {
+  box-sizing: border-box;
+}
+
+.main-class {
+  display: grid;
+  gap: 10px;
+  align-items: left;
+  width: 320px;
 }
 
 button {
@@ -91,4 +73,16 @@ input {
   width: 260px;
   border: 1px solid #4c2982;
   box-shadow: 2px 2px 2px #837c7c;
+}
+
+.form--input-button {
+  display: flex;
+}
+
+.label-title {
+  color: #4c2982;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
 }/*# sourceMappingURL=form.css.map */

@@ -1,28 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;300;900&display=swap");
-.grid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.subgrid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.grid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
-.subgrid {
-  width: 250;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
 h1 {
   margin: 0;
 }
@@ -30,15 +6,17 @@ h1 {
 h1 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.5;
+  min-width: 320px;
+  width: 320px;
 }
 
 h2 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -51,25 +29,32 @@ h2.h2--red {
 
 p {
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
 }
 p.p--green {
   color: #067973;
-  font-size: 20px;
+  font-size: 16px;
 }
 p.p--red {
   color: #b71540;
-  font-size: 20px;
-}
-
-.label-title {
-  color: #4c2982;
-  text-transform: uppercase;
+  font-size: 16px;
 }
 
 * {
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-class {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=globals.css.map */

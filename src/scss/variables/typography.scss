@@ -3,9 +3,9 @@
 
 $font-primary: 'Inter', sans-serif;
 
-$font-size-small: 20px;
-$font-size-medium: 30px;
-$font-size-large: 35px;
+$font-size-small: 16px;
+$font-size-medium: 25px;
+$font-size-large: 30px;
 
 h1 {
     margin: 0;
@@ -17,6 +17,8 @@ h1 {
     font-size: $font-size-large;
     font-weight: 900;
     line-height: 1.5;
+    min-width: 320px;
+    width: 320px;
 }
 
 h2 {
@@ -51,7 +53,4 @@ p {
     }
 }
 
-.label-title {
-    color: $color-primary;
-    text-transform: uppercase;
-}
+

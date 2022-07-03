@@ -5,8 +5,10 @@ function Form() {
     return(
         <form>
             <label for='inputId' className="label-title">Email Adress</label>
+            <div className='form--input-button'>
             <input type='text' id='inputId' name='inputId'></input>
             <button onClick={() => alert('Se ha submitido')}></button>
+            </div>
         </form>
     );
 };

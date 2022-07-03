@@ -21,3 +21,15 @@ input {
     border: 1px solid $color-primary;
     box-shadow: 2px 2px 2px #837c7c;
 }
+
+.form--input-button {
+    display: flex;
+}
+
+.label-title {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    margin-bottom: 28px;
+}

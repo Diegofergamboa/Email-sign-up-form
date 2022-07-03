@@ -6,15 +6,17 @@ h1 {
 h1 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 900;
   line-height: 1.5;
+  min-width: 320px;
+  width: 320px;
 }
 
 h2 {
   color: #4c2982;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -27,21 +29,16 @@ h2.h2--red {
 
 p {
   font-family: "Inter", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
 }
 p.p--green {
   color: #067973;
-  font-size: 20px;
+  font-size: 16px;
 }
 p.p--red {
   color: #b71540;
-  font-size: 20px;
-}
-
-.label-title {
-  color: #4c2982;
-  text-transform: uppercase;
+  font-size: 16px;
 }/*# sourceMappingURL=typography.css.map */
