@@ -6,7 +6,7 @@ function Form() {
         <form>
             <label for='inputId' className="label-title">Email Adress</label>
             <div className='form--input-button'>
-            <input type='text' id='inputId' name='inputId'></input>
+            <input type='text' id='inputId' class='input-class'name='inputId'></input>
             <button onClick={() => alert('Se ha submitido')}></button>
             </div>
         </form>
