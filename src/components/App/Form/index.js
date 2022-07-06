@@ -1,17 +1,28 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import { Modal } from '../Modal/index';
 import './form.scss';
 
 function Form() {
 
     const [value, setValue] = React.useState('Put your mail here');
     
-    // Check if the mail is in the correct format with an arroba and a point.
+    const [showModal, setShowModal] = React.useState(false);
+    const portalNode = document.getElementById('portal');
+
+    // Setter of the onClick function.
     function handleButtonInput() {
+        checkTextValue();
+        setShowModal(!showModal);
+    };
+
+    // Check if the mail is in the correct format with an arroba and a point.
+    function checkTextValue(){
         const inputValue = value;
         if (!inputValue.includes('@') && !inputValue.includes('.')){
-            setValue('Invalid mail')
+            setValue('Invalid mail');
         } else {
-            setValue('Mail correct')
+            setValue('Mail correct');
         }
     };
 
@@ -21,7 +32,8 @@ function Form() {
         setValue(inputValue);
     };
 
-    return(
+    return (
+        <>
         <form>
             <label htmlFor='inputId' className="label-title">Email Adress</label>
             <div className='form--input-button'>
@@ -29,6 +41,8 @@ function Form() {
             <button type='button' onClick={handleButtonInput}></button>
             </div>
         </form>
+        {showModal && ReactDOM.createPortal(<div><p>Hola que hace</p></div>, portalNode)}
+        </>
     );
 };
 
