@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Modal } from '../Modal/index';
+import { ModalSucess } from '../ModalSucess/index';
+import { ModalFailed } from '../ModalFailed/index';
 import './form.scss';
 
 function Form() {
@@ -12,26 +13,30 @@ function Form() {
 
     // Setter of the onClick function.
     function handleButtonInput() {
-        checkTextValue();
-        setShowModal(!showModal);
-    };
-
     // Check if the mail is in the correct format with an arroba and a point.
-    function checkTextValue(){
         const inputValue = value;
         if (!inputValue.includes('@') && !inputValue.includes('.')){
             setValue('Invalid mail');
+            setShowModal(false);
         } else {
             setValue('Mail correct');
+            setShowModal(true);
         }
     };
+    
+    // Running the Modals with the setup of false or true.
+    React.useEffect(()=> {
+        console.log(showModal);
+    }, [showModal])
+    
+
 
     // The setter of the useState of react.
     function handleChangeInput(event) {
         const inputValue = event.target.value;
         setValue(inputValue);
     };
-
+    
     return (
         <>
         <form>
@@ -41,7 +46,8 @@ function Form() {
             <button type='button' onClick={handleButtonInput}></button>
             </div>
         </form>
-        {showModal && ReactDOM.createPortal(<div><p>Hola que hace</p></div>, portalNode)}
+        {showModal && <ModalSucess></ModalSucess>}
+        {!showModal && <ModalFailed></ModalFailed>}
         </>
     );
 };
