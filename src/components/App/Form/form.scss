@@ -8,11 +8,14 @@ button {
     box-shadow: 2px 2px 2px #837c7c;
 }
 button {
-    background-image: url('../../../assets/svg-icons/arrow-right.svg');
     background-color: $color-secondary;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.rigth-arrow-svg {
+    fill: $color-primary;
 }
 
 .input-class {
