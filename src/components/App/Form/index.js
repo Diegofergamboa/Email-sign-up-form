@@ -46,8 +46,8 @@ function Form() {
             <button type='button' onClick={handleButtonInput}></button>
             </div>
         </form>
-        {showModal && ReactDOM.createPortal(<ModalSucess></ModalSucess>, portalNode)}
-        {!showModal && ReactDOM.createPortal(<ModalFailed></ModalFailed>, portalNode)}
+        {showModal && ReactDOM.createPortal(<ModalSucess/>, portalNode)}
+        {!showModal && ReactDOM.createPortal(<ModalFailed/>, portalNode)}
         </>
     );
 };
