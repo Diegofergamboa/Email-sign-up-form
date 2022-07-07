@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 function ModalFailed (){
-    <div>
+    <div className="Modal">
         <p>Primer Modal</p>
     </div>
 };

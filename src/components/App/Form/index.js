@@ -25,9 +25,9 @@ function Form() {
     };
     
     // Running the Modals with the setup of false or true.
-    React.useEffect(()=> {
-        console.log(showModal);
-    }, [showModal])
+    // React.useEffect(()=> {
+        
+    // }, [showModal])
     
 
 
@@ -46,8 +46,8 @@ function Form() {
             <button type='button' onClick={handleButtonInput}></button>
             </div>
         </form>
-        {showModal && <ModalSucess></ModalSucess>}
-        {!showModal && <ModalFailed></ModalFailed>}
+        {showModal && ReactDOM.createPortal(<ModalSucess></ModalSucess>, portalNode)}
+        {!showModal && ReactDOM.createPortal(<ModalFailed></ModalFailed>, portalNode)}
         </>
     );
 };

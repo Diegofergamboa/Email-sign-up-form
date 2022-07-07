@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 function ModalSucess (){
-    <div>
+    <div className="Modal">
         <p>ModalSucess Modal</p>
     </div>
 };
