@@ -1,1 +1,21 @@
-/*# sourceMappingURL=modal.css.map */
+p {
+  display: grid;
+  place-content: center;
+  place-items: center;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=ModalSucess.css.map */

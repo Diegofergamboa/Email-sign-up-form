@@ -23,12 +23,6 @@ function Form() {
             setShowModal(true);
         }
     };
-    
-    // Running the Modals with the setup of false or true.
-    // React.useEffect(()=> {
-        
-    // }, [showModal])
-    
 
 
     // The setter of the useState of react.
