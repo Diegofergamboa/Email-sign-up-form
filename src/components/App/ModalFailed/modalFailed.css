@@ -61,25 +61,44 @@ p.p--red {
 
 .modal-container {
   position: fixed;
-  top: 60%;
-  right: 37%;
+  top: 62%;
+  right: 39.5%;
   display: flex;
   place-content: center;
   place-items: center;
   width: 320px;
   min-width: 320px;
-  height: 60px;
+  height: 70px;
+  min-height: 70px;
+  margin: 8px;
 }
 
 .modal-container {
   border: 1px solid #b71540;
+  background-color: #fdeff3;
 }
 
 .triangle-image {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-color: #fdeff3;
+  fill: #b71540;
   width: 20px;
   height: 20px;
   margin: 8px;
+  animation: slide-up 250ms ease;
+}
+
+.text-error {
+  display: grid;
+  align-content: center;
+  margin: 2px;
+  background-color: #fdeff3;
+}
+.text-error.text-error h2 {
+  font-weight: 900;
+  color: #b71540;
+}
+.text-error.text-error p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b71540;
 }/*# sourceMappingURL=modalFailed.css.map */

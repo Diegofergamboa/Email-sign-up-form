@@ -61,12 +61,14 @@ p.p--red {
 
 .modal-container {
   position: fixed;
-  top: 60%;
-  right: 37%;
+  top: 62%;
+  right: 39.5%;
   display: flex;
   place-content: center;
   place-items: center;
   width: 320px;
   min-width: 320px;
-  height: 60px;
+  height: 70px;
+  min-height: 70px;
+  margin: 8px;
 }/*# sourceMappingURL=globals.css.map */

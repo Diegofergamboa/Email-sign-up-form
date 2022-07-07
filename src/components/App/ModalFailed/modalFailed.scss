@@ -2,13 +2,32 @@
 
 .modal-container {
     border: 1px solid $color-error;
+    background-color: $color-error-bg;
 }
 
 .triangle-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-color: $color-error-bg;
+    fill: $color-error;
     width: 20px;
     height: 20px;
     margin: 8px;
+    animation: slide-up 250ms ease;
 }
+
+.text-error {
+    display: grid;
+    align-content: center;
+    margin: 2px;
+    background-color: $color-error-bg;
+
+    &.text-error h2 {
+        font-weight: 900;
+        color: $color-error;
+    } 
+    &.text-error p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $color-error;
+    }
+}
+
