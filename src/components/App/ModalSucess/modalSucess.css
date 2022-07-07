@@ -1,21 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;300;900&display=swap");
+h1 {
+  margin: 0;
+}
+
+h1 {
+  color: #4c2982;
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1.5;
+  min-width: 320px;
+  width: 320px;
+}
+
+h2 {
+  color: #4c2982;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+h2.h2--green {
+  color: #067973;
+}
+h2.h2--red {
+  color: #b71540;
+}
+
 p {
+  font-family: "Inter", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+p.p--green {
+  color: #067973;
+  font-size: 16px;
+}
+p.p--red {
+  color: #b71540;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-class {
   display: grid;
   place-content: center;
   place-items: center;
   min-width: 320px;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
-.Modal {
+.modal-container {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 62%;
+  right: 39.5%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  place-content: center;
+  place-items: center;
+  width: 320px;
+  min-width: 320px;
+  height: 70px;
+  min-height: 70px;
+  margin: 8px;
+}
+
+.modal-container {
+  border: 1px solid #067973;
+  background-color: #f5fffe;
+  height: 100px;
+}
+
+.check-image {
+  background-color: #f5fffe;
+  fill: #067973;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  animation: slide-up 250ms ease;
+}
+
+.text-sucess {
+  display: grid;
+  align-content: center;
+  margin: 2px;
+  background-color: #f5fffe;
+}
+.text-sucess.text-sucess h2 {
+  font-weight: 900;
+  color: #067973;
+}
+.text-sucess.text-sucess p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #067973;
 }/*# sourceMappingURL=ModalSucess.css.map */

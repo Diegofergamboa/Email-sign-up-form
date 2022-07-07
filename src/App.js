@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Header } from './components/App/Header';
 import { Form } from './components/App/Form';
 import './scss/globals.scss';

@@ -44,8 +44,8 @@ function Form() {
             </button>
             </div>
         </form>
-        {showModal && ReactDOM.createPortal(<ModalSucess/>, portalNode)}
-        {!showModal && ReactDOM.createPortal(<ModalFailed/>, portalNode)}
+        {!showModal && ReactDOM.createPortal(<ModalSucess/>, portalNode)}
+        {showModal && ReactDOM.createPortal(<ModalFailed/>, portalNode)}
         </>
     );
 };
