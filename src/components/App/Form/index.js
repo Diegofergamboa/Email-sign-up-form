@@ -11,9 +11,16 @@ function Form() {
     const [showModal, setShowModal] = React.useState(false);
     const portalNode = document.getElementById('portal');
 
+    // The setter of the useState of react.
+    function handleChangeInput(event) {
+        const inputValue = event.target.value;
+        setValue(inputValue);
+    };
+
     // Setter of the onClick function.
+    //! Use ref into the handleButtonInput.
     function handleButtonInput() {
-    // Check if the mail is in the correct format with an arroba and a point.
+    // Check if the mail is in the correct format setted.
         const inputValue = value;
         if (!inputValue.includes('@') && !inputValue.includes('.')){
             setValue('Invalid mail');
@@ -25,12 +32,6 @@ function Form() {
     };
 
 
-    // The setter of the useState of react.
-    function handleChangeInput(event) {
-        const inputValue = event.target.value;
-        setValue(inputValue);
-    };
-    
     return (
         <>
         <form>
