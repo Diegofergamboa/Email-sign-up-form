@@ -16,7 +16,9 @@ function Form() {
         const inputValue = event.target.value;
         setValue(inputValue);
     };
-    
+
+    //! Usar el useEffect para que después que se renderice la aplicación y se de click, se renderice el modal.
+
     const handleChangeButton = () => {
         const inputValue = value;
         (inputValue.includes('@')) ? setShowModal(true) : setShowModal(false);
