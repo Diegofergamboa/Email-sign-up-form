@@ -4,6 +4,7 @@
     border: 1px solid $color-success;
     background-color: $color-success-bg;
     height: 100px;
+    z-index: 1;
 }
 
 
@@ -32,6 +33,3 @@
         color: $color-success;
     }
 }
-
-
-//! Darle display none a .main-class.
