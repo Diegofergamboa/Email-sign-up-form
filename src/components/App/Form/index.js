@@ -7,24 +7,25 @@ import './form.scss';
 function Form() {
 
     const [value, setValue] = React.useState('Put your mail here');
-    
-    const [showModal, setShowModal] = React.useState(false);
+
     const portalNode = document.getElementById('portal');
 
-    // The setter of the useState of react.
+    
     function handleChangeInput(event) {
         const inputValue = event.target.value;
         setValue(inputValue);
     };
-
-    //! Usar el useEffect para que después que se renderice la aplicación y se de click, se renderice el modal.
-
+    
+    // The setter of the useState in the value of the input.
     const handleChangeButton = () => {
         const inputValue = value;
-        (inputValue.includes('@')) ? setShowModal(true) : setShowModal(false);
-        console.log(showModal)
-    }
-    
+        if (inputValue.includes('@') && inputValue.includes('.') && inputValue.length > 6) {
+            setValue('Mail correct'); } 
+        else {
+            setValue('Mail incorrect');
+            }; 
+    };
+
 
     return (
         <>
@@ -39,8 +40,8 @@ function Form() {
             </button>
             </div>
         </form>
-        {showModal && ReactDOM.createPortal(<ModalSucess/>, portalNode)}
-        {!showModal && ReactDOM.createPortal(<ModalFailed/>, portalNode)}
+        {(value === 'Mail correct') ? ReactDOM.createPortal(<ModalSucess/>, portalNode): null}
+        {(value === 'Mail incorrect') ? ReactDOM.createPortal(<ModalFailed/>, portalNode): null}
         </>
     );
 };

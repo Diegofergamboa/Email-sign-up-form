@@ -1,6 +1,17 @@
 @import '../../../scss/globals.scss';
 
-.modal-container {
+.modal-sucess {
+    position: fixed;
+    top: 62%;
+    right: 39.5%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 320px;
+    min-width: 320px;
+    height: 70px;
+    min-height: 70px;
+    margin: 8px;
     border: 1px solid $color-success;
     background-color: $color-success-bg;
     height: 100px;
